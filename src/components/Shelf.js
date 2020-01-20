@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import Button from '@material-ui/core/Button';
+import AddCircleIcon from '@material-ui/icons/AddCircle';
+
 
 export default class Shelf extends Component {
 	constructor(props){
@@ -17,8 +20,8 @@ export default class Shelf extends Component {
 			return (
 				<li key={id}>
 				{item}
-				<button onClick={() => {
-					this.props.addItem(item)}}>+</button>
+				<Button onClick={() => {
+					this.props.addItem(item)}}><AddCircleIcon /></Button>
 				</li>
 			)
 		})
