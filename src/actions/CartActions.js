@@ -1,4 +1,5 @@
-// Action Creator functions
+// Action Creator function
+	// A function that returns an action object.
 
 // This action will be called from a button in the UI
 export const addToCart = (item) => {
@@ -9,6 +10,4 @@ export const addToCart = (item) => {
 		type: 'ADD_ITEM', //action naming conventions: all caps with snake-case 
 		item //ES6 shorthand {item: item}
 	}
-
-
 }
