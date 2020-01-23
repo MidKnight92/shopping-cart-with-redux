@@ -1,11 +1,17 @@
+// Presentation Component
+	// Purpose: How things look (markup, styles)
+	// Aware of Redux: NO
+	// To Read data: Read data from props
+	// To change data: Invoke callbacks from props
+
 import React, { Component } from 'react';
 import Button from '@material-ui/core/Button';
 import AddCircleIcon from '@material-ui/icons/AddCircle';
 
 
-export default class Shelf extends Component {
+class Shelf extends Component {
 	constructor(props){
-		super(props);
+		super(props)
 		this.state = {
 			shelfItems: [
 				"Bananas",
@@ -35,3 +41,5 @@ export default class Shelf extends Component {
 		)
 	}
 }
+
+export default Shelf

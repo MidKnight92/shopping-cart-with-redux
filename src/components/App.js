@@ -1,16 +1,17 @@
-import React from 'react';
+import React, { Component } from 'react';
 import '../stylesheets/App.css';
-import Shelf from './Shelf';
+import Cart from '../containers/Cart';
 import { Container } from '@material-ui/core'
 
-function App() {
-  return (
-    <Container fluid>
-      <h1>Welcome to the Redux Shopping Cart</h1>
-      <Shelf />
-        
-    </Container>
-  );
+class App extends Component {
+  render(){
+  	return (
+	    <Container>
+	      <h1>Welcome to the Redux Shopping Cart</h1>
+	      <Cart />
+	    </Container>
+	  );
+  	}
 }
 
 export default App;

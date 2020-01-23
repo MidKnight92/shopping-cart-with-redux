@@ -4,9 +4,13 @@ import rootReducer from './reducers/RootReducer';
 // 1. integrate Redux into React by defining a store using the createStore method from redux.
 	// createStore method takes two arguments rootReducer (the program's combined reducers) and initial state
 
-export default (initialState) => {
-	return createStore(rootReducer, initialState)
-};
+export default(initialState) => {
+  return createStore(
+    rootReducer,
+    initialState,
+    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+  )
+}
 
 
 //------ Background Information -------
